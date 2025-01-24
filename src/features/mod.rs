@@ -1,10 +1,6 @@
 use tokio::signal;
 
-mod mqtt;
-mod mysql;
 mod log;
-mod nacos;
-mod grpc;
 mod docker;
 mod rabbitmq;
 

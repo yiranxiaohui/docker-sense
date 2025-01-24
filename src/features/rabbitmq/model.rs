@@ -53,10 +53,6 @@ impl HandleStatus {
         }
         self
     }
-
-    pub fn set_status(mut self, status: Status) {
-        self.status = Some(status);
-    }
 }
 
 impl FromStr for Handle {

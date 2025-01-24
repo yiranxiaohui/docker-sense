@@ -4,15 +4,13 @@ mod display;
 pub mod producer;
 
 use std::sync::{Arc, LazyLock, OnceLock, };
-use std::time::Duration;
 use lapin::{Channel, Connection};
 use lapin::options::QueueDeclareOptions;
 use lapin::types::FieldTable;
 use log::{debug, error, info};
 use tokio::spawn;
 use tokio::sync::{Mutex, Notify};
-use tokio::time::sleep;
-use crate::{config, RUNTIME};
+use crate::config;
 use crate::features::rabbitmq::producer::instance;
 
 pub static RABBITMQ_CONN: OnceLock<Arc<Mutex<RabbitConnection>>> = OnceLock::new();
