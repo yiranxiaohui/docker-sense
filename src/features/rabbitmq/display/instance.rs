@@ -1,5 +1,3 @@
-use std::sync::Arc;
-
 use log::debug;
 
 use crate::config::{self, edit_instance_id};

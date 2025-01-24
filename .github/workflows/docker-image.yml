@@ -15,4 +15,4 @@ jobs:
     steps:
     - uses: actions/checkout@v4
     - name: Build the Docker image
-      run: docker build . --file bin/Dockerfile --tag web.yunnet.top:12500/DockSense:$(date +%s)
+      run: docker build . --file bin/Dockerfile --tag web.yunnet.top:12500/docksense:$(date +%s)

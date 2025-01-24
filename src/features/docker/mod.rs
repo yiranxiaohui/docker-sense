@@ -25,11 +25,3 @@ pub async fn _ping() {
         println!("{}", message);
     }
 }
-
-
-
-pub async fn exec(_command: String) {
-    // if let Ok(dockerExec) = DockerExec::new("".to_string()).await {
-    //     dockerExec.run(command).await.expect("TODO: panic message");
-    // }
-}
