@@ -3,11 +3,11 @@ LABEL authors="root"
 
 RUN mkdir -p "/opt/docker"
 
-COPY witdata-docker /opt/docker
-COPY config.toml /opt/docker
+COPY DockSense /opt/DockSense
+COPY config.toml /opt/DockSense
 
-WORKDIR /opt/docker
+WORKDIR /opt/DockSense
 
-RUN chmod +x /opt/docker/witdata-docker
+RUN chmod +x /opt/docker/DockSense
 
-CMD ["./witdata-docker"]
+CMD ["./DockSense"]
