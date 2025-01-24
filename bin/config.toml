@@ -1,0 +1,2 @@
+[rabbitmq]
+addr = "amqp://rabbitmq:rabbitmq@web.yunnet.top:12671/%2f"

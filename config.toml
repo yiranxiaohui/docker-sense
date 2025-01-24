@@ -1,0 +1,4 @@
+instance_id = 151803005757427712
+
+[rabbitmq]
+addr = "amqp://rabbitmq:rabbitmq@web.yunnet.top:12671/%2f"

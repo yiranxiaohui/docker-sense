@@ -1,0 +1,30 @@
+[package]
+name = "witdata-docker"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+bollard = "0.18.1"
+futures = "0.3.31"
+serde = { version = "1.0.216", features = ["derive"] }
+serde_json = "1"
+toml = "0.8.19"
+rumqttc = { version = "0.24.0", features = ["default"]}
+log = "0.4.22"
+env_logger = "0.11.6"
+chrono = "0.4.39"
+sqlx = {version = "0.8.2", features = ["mysql", "runtime-tokio"]}
+prost = "0.13.4"
+local-ip-address = "0.6.3"
+lapin = {version = "2.5.0", features = ["default"]}
+
+tokio = { version = "1.42.0", features = ["rt", "rt-multi-thread", "macros", "full"] }
+tokio-stream = "0.1.17"
+
+tonic = {version = "0.12.3", features = ["default"]}
+tonic-health = "0.12.3"
+
+sysinfo = {version = "0.33.1", features = ["default"]}
+
+[build-dependencies]
+tonic-build = "0.12.3"
